@@ -9,9 +9,13 @@
 
 - [Elementi](https://www.w3schools.com/html/html_elements.asp)
 - [Attributi html](https://www.w3schools.com/html/html_attributes.asp)
-
 - [Intestazioni](https://www.w3schools.com/html/html_headings.asp)
 - [Paragrafi](https://www.w3schools.com/html/html_paragraphs.asp)
+- [Liste](https://www.w3schools.com/html/html_lists.asp) 
+
+
+- HTML (semantica) HyperText Markup Language
+
 
 
 
