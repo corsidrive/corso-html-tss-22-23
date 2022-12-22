@@ -18,30 +18,27 @@
 - [Link](https://www.w3schools.com/html/html_links.asp) 
 
 
-🧧*nota: domandine*
+🧧*Esecitazione 01*
 - lista ordinata
 - link che apre in un altra finestra/tab
 - link che apre il programma di posta elettronica predefinito
 - un immagine  che è anche un link
 
 
-Tre aspetti fondamentali
+### Tre aspetti fondamentali
+
 - HTML (semantica) HyperText Markup Language
 - CSS (aspetto) fogli di stile  Cascading Style Sheets
 - Javascript (interattività) client side
 
-
-
-
-
-🧧*nota: discorso da approfondire*
 - collegamenti relativi e assoluti
 
 **Sto aprendo il documento in locale tramite il file system**
-[file:///C:/Users/utente/Desktop/corso%20html%20tss%2022-23/basi_html/documento_base_html.html
-](file:///C:/Users/utente/Desktop/corso%20html%20tss%2022-23/basi_html/documento_base_html.html)
-**protocollo HTTP**
-Esiste un server web che fornisce il documento richiesto (*request HTTP*)
+😢❌🚫⛔[file:///C:/Users/documento_base_html.html
+](locale)
+
+**link protocollo HTTP**
+💚✅✔🟢Esiste un server web che fornisce il documento richiesto (*request HTTP*)
 https://www.w3schools.com/html/default.asp
 
 ## Estensioni vscode
