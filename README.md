@@ -25,8 +25,14 @@
 - un immagine  che è anche un link
 
 
-🧧*nota: discorso da finire*
+Tre aspetti fondamentali
 - HTML (semantica) HyperText Markup Language
+- CSS (aspetto) fogli di stile  Cascading Style Sheets
+- Javascript (interattività) client side
+
+
+
+
 
 🧧*nota: discorso da approfondire*
 - collegamenti relativi e assoluti
