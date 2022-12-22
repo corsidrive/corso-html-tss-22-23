@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .cell.c1 a {
+                background-color: red;
+            }
+            .cell.c0 {
+                background-color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table class="flexible table table-striped table-hover generaltable generalbox"
+               id="participants">
+            <thead>
+                <tr>
+                    <th class="header c0"
+                        scope="col"><input id="select-all-participants"
+                               name="select-all-participants"
+                               type="checkbox"
+                               class="m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="master"
+                               data-togglegroup="participants-table"
+                               data-toggle-selectall="Seleziona tutto"
+                               data-toggle-deselectall="Deseleziona tutto">
+                        <label for="select-all-participants"
+                               class="sr-only">Seleziona tutto</label>
+                        <div class="commands"></div>
+                    </th>
+                    <th class="header c1"
+                        scope="col"><a data-sortable="1"
+                           data-sortby="firstname"
+                           data-sortorder="4"
+                           href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;tsort=firstname&amp;tdir=4">Nome<span
+                                  class="accesshide ">Ordina per Nome Crescente</span></a> / <a data-sortable="1"
+                           data-sortby="lastname"
+                           data-sortorder="3"
+                           href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;tsort=lastname&amp;tdir=3">Cognome<span
+                                  class="accesshide ">Ordina per Cognome Crescente</span></a> <i
+                           class="icon fa fa-sort-asc fa-fw "
+                           title="Crescente"
+                           aria-label="Crescente"></i>
+                        <div class="commands"><a title="Nascondi Nome"
+                               aria-expanded="true"
+                               aria-controls="user-index-participants-80_r0_c1 user-index-participants-80_r1_c1 user-index-participants-80_r2_c1 user-index-participants-80_r3_c1 user-index-participants-80_r4_c1 user-index-participants-80_r5_c1 user-index-participants-80_r6_c1 user-index-participants-80_r7_c1 user-index-participants-80_r8_c1 user-index-participants-80_r9_c1 user-index-participants-80_r10_c1 user-index-participants-80_r11_c1 user-index-participants-80_r12_c1 user-index-participants-80_r13_c1 user-index-participants-80_r14_c1 user-index-participants-80_r15_c1 user-index-participants-80_r16_c1 user-index-participants-80_r17_c1 user-index-participants-80_r18_c1 user-index-participants-80_r19_c1"
+                               data-action="hide"
+                               data-column="fullname"
+                               href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;thide=fullname"><i
+                                   class="icon fa fa-minus fa-fw "
+                                   title="Nascondi"
+                                   aria-label="Nascondi"></i></a></div>
+                    </th>
+                    <th class="header c2"
+                        scope="col"><a data-sortable="1"
+                           data-sortby="email"
+                           data-sortorder="4"
+                           href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;tsort=email&amp;tdir=4">Indirizzo
+                            email<span class="accesshide ">Ordina per Indirizzo email Crescente</span></a>
+                        <div class="commands"><a title="Nascondi Indirizzo email"
+                               aria-expanded="true"
+                               aria-controls="user-index-participants-80_r0_c2 user-index-participants-80_r1_c2 user-index-participants-80_r2_c2 user-index-participants-80_r3_c2 user-index-participants-80_r4_c2 user-index-participants-80_r5_c2 user-index-participants-80_r6_c2 user-index-participants-80_r7_c2 user-index-participants-80_r8_c2 user-index-participants-80_r9_c2 user-index-participants-80_r10_c2 user-index-participants-80_r11_c2 user-index-participants-80_r12_c2 user-index-participants-80_r13_c2 user-index-participants-80_r14_c2 user-index-participants-80_r15_c2 user-index-participants-80_r16_c2 user-index-participants-80_r17_c2 user-index-participants-80_r18_c2 user-index-participants-80_r19_c2"
+                               data-action="hide"
+                               data-column="email"
+                               href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;thide=email"><i
+                                   class="icon fa fa-minus fa-fw "
+                                   title="Nascondi"
+                                   aria-label="Nascondi"></i></a></div>
+                    </th>
+                    <th class="header c3"
+                        scope="col">Ruoli<div class="commands"><a title="Nascondi Ruoli"
+                               aria-expanded="true"
+                               aria-controls="user-index-participants-80_r0_c3 user-index-participants-80_r1_c3 user-index-participants-80_r2_c3 user-index-participants-80_r3_c3 user-index-participants-80_r4_c3 user-index-participants-80_r5_c3 user-index-participants-80_r6_c3 user-index-participants-80_r7_c3 user-index-participants-80_r8_c3 user-index-participants-80_r9_c3 user-index-participants-80_r10_c3 user-index-participants-80_r11_c3 user-index-participants-80_r12_c3 user-index-participants-80_r13_c3 user-index-participants-80_r14_c3 user-index-participants-80_r15_c3 user-index-participants-80_r16_c3 user-index-participants-80_r17_c3 user-index-participants-80_r18_c3 user-index-participants-80_r19_c3"
+                               data-action="hide"
+                               data-column="roles"
+                               href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;thide=roles"><i
+                                   class="icon fa fa-minus fa-fw "
+                                   title="Nascondi"
+                                   aria-label="Nascondi"></i></a></div>
+                    </th>
+                    <th class="header c4"
+                        scope="col">Gruppi<div class="commands"><a title="Nascondi Gruppi"
+                               aria-expanded="true"
+                               aria-controls="user-index-participants-80_r0_c4 user-index-participants-80_r1_c4 user-index-participants-80_r2_c4 user-index-participants-80_r3_c4 user-index-participants-80_r4_c4 user-index-participants-80_r5_c4 user-index-participants-80_r6_c4 user-index-participants-80_r7_c4 user-index-participants-80_r8_c4 user-index-participants-80_r9_c4 user-index-participants-80_r10_c4 user-index-participants-80_r11_c4 user-index-participants-80_r12_c4 user-index-participants-80_r13_c4 user-index-participants-80_r14_c4 user-index-participants-80_r15_c4 user-index-participants-80_r16_c4 user-index-participants-80_r17_c4 user-index-participants-80_r18_c4 user-index-participants-80_r19_c4"
+                               data-action="hide"
+                               data-column="groups"
+                               href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;thide=groups"><i
+                                   class="icon fa fa-minus fa-fw "
+                                   title="Nascondi"
+                                   aria-label="Nascondi"></i></a></div>
+                    </th>
+                    <th class="header c5"
+                        scope="col"><a data-sortable="1"
+                           data-sortby="lastaccess"
+                           data-sortorder="4"
+                           href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;tsort=lastaccess&amp;tdir=4">Ultimo
+                            accesso al corso<span class="accesshide ">Ordina per Ultimo accesso al corso
+                                Crescente</span></a>
+                        <div class="commands"><a title="Nascondi Ultimo accesso al corso"
+                               aria-expanded="true"
+                               aria-controls="user-index-participants-80_r0_c5 user-index-participants-80_r1_c5 user-index-participants-80_r2_c5 user-index-participants-80_r3_c5 user-index-participants-80_r4_c5 user-index-participants-80_r5_c5 user-index-participants-80_r6_c5 user-index-participants-80_r7_c5 user-index-participants-80_r8_c5 user-index-participants-80_r9_c5 user-index-participants-80_r10_c5 user-index-participants-80_r11_c5 user-index-participants-80_r12_c5 user-index-participants-80_r13_c5 user-index-participants-80_r14_c5 user-index-participants-80_r15_c5 user-index-participants-80_r16_c5 user-index-participants-80_r17_c5 user-index-participants-80_r18_c5 user-index-participants-80_r19_c5"
+                               data-action="hide"
+                               data-column="lastaccess"
+                               href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;thide=lastaccess"><i
+                                   class="icon fa fa-minus fa-fw "
+                                   title="Nascondi"
+                                   aria-label="Nascondi"></i></a></div>
+                    </th>
+                    <th class="header c6"
+                        scope="col">Stato<div class="commands"><a title="Nascondi Stato"
+                               aria-expanded="true"
+                               aria-controls="user-index-participants-80_r0_c6 user-index-participants-80_r1_c6 user-index-participants-80_r2_c6 user-index-participants-80_r3_c6 user-index-participants-80_r4_c6 user-index-participants-80_r5_c6 user-index-participants-80_r6_c6 user-index-participants-80_r7_c6 user-index-participants-80_r8_c6 user-index-participants-80_r9_c6 user-index-participants-80_r10_c6 user-index-participants-80_r11_c6 user-index-participants-80_r12_c6 user-index-participants-80_r13_c6 user-index-participants-80_r14_c6 user-index-participants-80_r15_c6 user-index-participants-80_r16_c6 user-index-participants-80_r17_c6 user-index-participants-80_r18_c6 user-index-participants-80_r19_c6"
+                               data-action="hide"
+                               data-column="status"
+                               href="https://www.formaretedad.it/dad/user/index.php?id=80&amp;thide=status"><i
+                                   class="icon fa fa-minus fa-fw "
+                                   title="Nascondi"
+                                   aria-label="Nascondi"></i></a></div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class=""
+                    id="user-index-participants-80_r0">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r0_c0"><input id="user753"
+                               name="user753"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user753"
+                               class="accesshide">Seleziona 'Mattia Caddeo'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r0_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=753&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Mattia Caddeo"
+                                 title="Immagine Mattia Caddeo">Mattia Caddeo</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r0_c2">mattiacaddeo1@gmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r0_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:753"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Mattia Caddeo"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Mattia Caddeo">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Mattia Caddeo"
+                                       aria-label="Ruoli assegnati a Mattia Caddeo"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r0_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r0_c5">3 ore 4 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r0_c6">
+                        <div data-fullname="Mattia Caddeo"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1369"
+                               role="button"
+                               class="editenrollink"
+                               rel="1369"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1369"
+                               role="button"
+                               class="unenrollink"
+                               rel="1369"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r1">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r1_c0"><input id="user13"
+                               name="user13"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user13"
+                               class="accesshide">Seleziona 'Daniela Cardella'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r1_c1"
+                        scope="row">
+                        
+                        <a href="https://www.formaretedad.it/dad/user/view.php?id=13&amp;course=80"
+                           class="d-inline-block aabtn">
+                           <img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Daniela Cardella"
+                                 title="Immagine Daniela Cardella">
+                            Daniela Cardella
+                        </a>
+                                
+                        </th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r1_c2">daniela.cardella@forma-re-te.it</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r1_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:13"
+                              data-value="[&quot;3&quot;]"
+                              data-editlabel="Ruoli assegnati a Daniela Cardella"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Daniela Cardella">
+                                Docente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Daniela Cardella"
+                                       aria-label="Ruoli assegnati a Daniela Cardella"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r1_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r1_c5">Mai</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r1_c6">
+                        <div data-fullname="Daniela Cardella"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:43"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:43">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1384"
+                               role="button"
+                               class="editenrollink"
+                               rel="1384"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1384"
+                               role="button"
+                               class="unenrollink"
+                               rel="1384"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r2">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r2_c0"><input id="user98"
+                               name="user98"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user98"
+                               class="accesshide">Seleziona 'tss consulente'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r2_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=98&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine tss consulente"
+                                 title="Immagine tss consulente">tss consulente</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r2_c2">consulentetss@forma-re-te.it</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r2_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:98"
+                              data-value="[&quot;3&quot;]"
+                              data-editlabel="Ruoli assegnati a tss consulente"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a tss consulente">
+                                Docente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a tss consulente"
+                                       aria-label="Ruoli assegnati a tss consulente"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r2_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r2_c5">3 min. 51 secondi</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r2_c6">
+                        <div data-fullname="tss consulente"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:43"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:43">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1385"
+                               role="button"
+                               class="editenrollink"
+                               rel="1385"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1385"
+                               role="button"
+                               class="unenrollink"
+                               rel="1385"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r3">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r3_c0"><input id="user756"
+                               name="user756"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user756"
+                               class="accesshide">Seleziona 'Alana Shelley Dantas Alves Bispo'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r3_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=756&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Alana Shelley Dantas Alves Bispo"
+                                 title="Immagine Alana Shelley Dantas Alves Bispo">Alana Shelley Dantas Alves Bispo</a>
+                    </th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r3_c2">lanadantas@icloud.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r3_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:756"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Alana Shelley Dantas Alves Bispo"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Alana Shelley Dantas Alves Bispo">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Alana Shelley Dantas Alves Bispo"
+                                       aria-label="Ruoli assegnati a Alana Shelley Dantas Alves Bispo"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r3_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r3_c5">1 ora 4 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r3_c6">
+                        <div data-fullname="Alana Shelley Dantas Alves Bispo"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1370"
+                               role="button"
+                               class="editenrollink"
+                               rel="1370"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1370"
+                               role="button"
+                               class="unenrollink"
+                               rel="1370"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r4">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r4_c0"><input id="user764"
+                               name="user764"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user764"
+                               class="accesshide">Seleziona 'Valentina Del Monaco'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r4_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=764&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Valentina Del Monaco"
+                                 title="Immagine Valentina Del Monaco">Valentina Del Monaco</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r4_c2">valentina.delmonaco98@gmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r4_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:764"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Valentina Del Monaco"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Valentina Del Monaco">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Valentina Del Monaco"
+                                       aria-label="Ruoli assegnati a Valentina Del Monaco"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r4_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r4_c5">3 ore 2 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r4_c6">
+                        <div data-fullname="Valentina Del Monaco"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1371"
+                               role="button"
+                               class="editenrollink"
+                               rel="1371"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1371"
+                               role="button"
+                               class="unenrollink"
+                               rel="1371"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r5">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r5_c0"><input id="user9"
+                               name="user9"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user9"
+                               class="accesshide">Seleziona 'Luciano Di Dio'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r5_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=9&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Luciano Di Dio"
+                                 title="Immagine Luciano Di Dio">Luciano Di Dio</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r5_c2">luciano.didio@forma-re-te.it</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r5_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:9"
+                              data-value="[&quot;3&quot;]"
+                              data-editlabel="Ruoli assegnati a Luciano Di Dio"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Luciano Di Dio">
+                                Docente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Luciano Di Dio"
+                                       aria-label="Ruoli assegnati a Luciano Di Dio"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r5_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r5_c5">2 giorni 2 ore</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r5_c6">
+                        <div data-fullname="Luciano Di Dio"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 21 novembre 2022, 14:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 21 novembre 2022, 14:40">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1400"
+                               role="button"
+                               class="editenrollink"
+                               rel="1400"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1400"
+                               role="button"
+                               class="unenrollink"
+                               rel="1400"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r6">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r6_c0"><input id="user12"
+                               name="user12"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user12"
+                               class="accesshide">Seleziona 'Luciana Donniaquio'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r6_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=12&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Luciana Donniaquio"
+                                 title="Immagine Luciana Donniaquio">Luciana Donniaquio</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r6_c2">luciana.donniaquio@forma-re-te.it</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r6_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:12"
+                              data-value="[&quot;3&quot;]"
+                              data-editlabel="Ruoli assegnati a Luciana Donniaquio"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Luciana Donniaquio">
+                                Docente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Luciana Donniaquio"
+                                       aria-label="Ruoli assegnati a Luciana Donniaquio"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r6_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r6_c5">2 giorni 1 ora</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r6_c6">
+                        <div data-fullname="Luciana Donniaquio"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:43"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:43">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1383"
+                               role="button"
+                               class="editenrollink"
+                               rel="1383"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1383"
+                               role="button"
+                               class="unenrollink"
+                               rel="1383"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r7">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r7_c0"><input id="user759"
+                               name="user759"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user759"
+                               class="accesshide">Seleziona 'Andrea Fabbricatore'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r7_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=759&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Andrea Fabbricatore"
+                                 title="Immagine Andrea Fabbricatore">Andrea Fabbricatore</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r7_c2">andrea.fabbricatore9569@gmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r7_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:759"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Andrea Fabbricatore"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Andrea Fabbricatore">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Andrea Fabbricatore"
+                                       aria-label="Ruoli assegnati a Andrea Fabbricatore"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r7_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r7_c5">3 ore 13 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r7_c6">
+                        <div data-fullname="Andrea Fabbricatore"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1372"
+                               role="button"
+                               class="editenrollink"
+                               rel="1372"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1372"
+                               role="button"
+                               class="unenrollink"
+                               rel="1372"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r8">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r8_c0"><input id="user755"
+                               name="user755"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user755"
+                               class="accesshide">Seleziona 'Simone Greco'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r8_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=755&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Simone Greco"
+                                 title="Immagine Simone Greco">Simone Greco</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r8_c2">simogre93@libero.it</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r8_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:755"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Simone Greco"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Simone Greco">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Simone Greco"
+                                       aria-label="Ruoli assegnati a Simone Greco"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r8_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r8_c5">3 ore 2 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r8_c6">
+                        <div data-fullname="Simone Greco"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1373"
+                               role="button"
+                               class="editenrollink"
+                               rel="1373"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1373"
+                               role="button"
+                               class="unenrollink"
+                               rel="1373"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r9">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r9_c0"><input id="user751"
+                               name="user751"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user751"
+                               class="accesshide">Seleziona 'Enrico Malesani'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r9_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=751&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Enrico Malesani"
+                                 title="Immagine Enrico Malesani">Enrico Malesani</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r9_c2">enrico.malesani@hotmail.it</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r9_c3"><span class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:751"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Enrico Malesani"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Enrico Malesani">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Enrico Malesani"
+                                       aria-label="Ruoli assegnati a Enrico Malesani"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r9_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r9_c5">2 ore 58 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r9_c6">
+                        <div data-fullname="Enrico Malesani"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1374"
+                               role="button"
+                               class="editenrollink"
+                               rel="1374"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1374"
+                               role="button"
+                               class="unenrollink"
+                               rel="1374"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r10">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r10_c0"><input id="user766"
+                               name="user766"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user766"
+                               class="accesshide">Seleziona 'Marco Martinotti'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r10_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=766&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Marco Martinotti"
+                                 title="Immagine Marco Martinotti">Marco Martinotti</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r10_c2">marco.martinotti1995@gmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r10_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:766"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Marco Martinotti"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Marco Martinotti">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Marco Martinotti"
+                                       aria-label="Ruoli assegnati a Marco Martinotti"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r10_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r10_c5">1 giorno</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r10_c6">
+                        <div data-fullname="Marco Martinotti"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1375"
+                               role="button"
+                               class="editenrollink"
+                               rel="1375"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1375"
+                               role="button"
+                               class="unenrollink"
+                               rel="1375"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r11">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r11_c0"><input id="user757"
+                               name="user757"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user757"
+                               class="accesshide">Seleziona 'Cristina Angelica Marutiac'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r11_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=757&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Cristina Angelica Marutiac"
+                                 title="Immagine Cristina Angelica Marutiac">Cristina Angelica Marutiac</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r11_c2">cuciureancristina@yahoo.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r11_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:757"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Cristina Angelica Marutiac"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Cristina Angelica Marutiac">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Cristina Angelica Marutiac"
+                                       aria-label="Ruoli assegnati a Cristina Angelica Marutiac"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r11_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r11_c5">3 ore 1 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r11_c6">
+                        <div data-fullname="Cristina Angelica Marutiac"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1376"
+                               role="button"
+                               class="editenrollink"
+                               rel="1376"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1376"
+                               role="button"
+                               class="unenrollink"
+                               rel="1376"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r12">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r12_c0"><input id="user799"
+                               name="user799"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user799"
+                               class="accesshide">Seleziona 'Dario Mennillo'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r12_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=799&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Dario Mennillo"
+                                 title="Immagine Dario Mennillo">Dario Mennillo</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r12_c2">dario.mennillo@gmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r12_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:799"
+                              data-value="[&quot;3&quot;]"
+                              data-editlabel="Ruoli assegnati a Dario Mennillo"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Dario Mennillo">
+                                Docente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Dario Mennillo"
+                                       aria-label="Ruoli assegnati a Dario Mennillo"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r12_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r12_c5">33 giorni 23 ore</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r12_c6">
+                        <div data-fullname="Dario Mennillo"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="giovedì, 10 novembre 2022, 09:11"
+                             data-timeend=""
+                             data-timeenrolled="giovedì, 10 novembre 2022, 09:12">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1389"
+                               role="button"
+                               class="editenrollink"
+                               rel="1389"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1389"
+                               role="button"
+                               class="unenrollink"
+                               rel="1389"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r13">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r13_c0"><input id="user763"
+                               name="user763"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user763"
+                               class="accesshide">Seleziona 'Fabio Miseo'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r13_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=763&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Fabio Miseo"
+                                 title="Immagine Fabio Miseo">Fabio Miseo</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r13_c2">miseo.fabio@gmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r13_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:763"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Fabio Miseo"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Fabio Miseo">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Fabio Miseo"
+                                       aria-label="Ruoli assegnati a Fabio Miseo"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r13_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r13_c5">3 ore 3 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r13_c6">
+                        <div data-fullname="Fabio Miseo"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1377"
+                               role="button"
+                               class="editenrollink"
+                               rel="1377"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1377"
+                               role="button"
+                               class="unenrollink"
+                               rel="1377"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r14">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r14_c0"><input id="user768"
+                               name="user768"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user768"
+                               class="accesshide">Seleziona 'Vincenzo Mola'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r14_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=768&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Vincenzo Mola"
+                                 title="Immagine Vincenzo Mola">Vincenzo Mola</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r14_c2">cercalavoro777@protonmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r14_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:768"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Vincenzo Mola"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Vincenzo Mola">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Vincenzo Mola"
+                                       aria-label="Ruoli assegnati a Vincenzo Mola"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r14_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r14_c5">2 ore 58 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r14_c6">
+                        <div data-fullname="Vincenzo Mola"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:39"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:41">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1378"
+                               role="button"
+                               class="editenrollink"
+                               rel="1378"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1378"
+                               role="button"
+                               class="unenrollink"
+                               rel="1378"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r15">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r15_c0"><input id="user10"
+                               name="user10"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user10"
+                               class="accesshide">Seleziona 'Blerina Mriscia'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r15_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=10&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/pluginfile.php/77/user/icon/adaptable/f2?rev=501"
+                                 class="userpicture"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Blerina Mriscia"
+                                 title="Immagine Blerina Mriscia">Blerina Mriscia</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r15_c2">blerina.mriscia@forma-re-te.it</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r15_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:10"
+                              data-value="[&quot;3&quot;]"
+                              data-editlabel="Ruoli assegnati a Blerina Mriscia"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Blerina Mriscia">
+                                Docente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Blerina Mriscia"
+                                       aria-label="Ruoli assegnati a Blerina Mriscia"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r15_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r15_c5">Mai</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r15_c6">
+                        <div data-fullname="Blerina Mriscia"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="giovedì, 24 novembre 2022, 17:18"
+                             data-timeend=""
+                             data-timeenrolled="giovedì, 24 novembre 2022, 17:19">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1402"
+                               role="button"
+                               class="editenrollink"
+                               rel="1402"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1402"
+                               role="button"
+                               class="unenrollink"
+                               rel="1402"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r16">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r16_c0"><input id="user748"
+                               name="user748"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user748"
+                               class="accesshide">Seleziona 'Matteo Peiretti'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r16_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=748&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Matteo Peiretti"
+                                 title="Immagine Matteo Peiretti">Matteo Peiretti</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r16_c2">matteopeiretti1@gmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r16_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:748"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Matteo Peiretti"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Matteo Peiretti">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Matteo Peiretti"
+                                       aria-label="Ruoli assegnati a Matteo Peiretti"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r16_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r16_c5">3 ore 15 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r16_c6">
+                        <div data-fullname="Matteo Peiretti"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:41"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:42">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1379"
+                               role="button"
+                               class="editenrollink"
+                               rel="1379"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1379"
+                               role="button"
+                               class="unenrollink"
+                               rel="1379"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r17">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r17_c0"><input id="user102"
+                               name="user102"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user102"
+                               class="accesshide">Seleziona 'Regione Piemonte'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r17_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=102&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Regione Piemonte"
+                                 title="Immagine Regione Piemonte">Regione Piemonte</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r17_c2">settoreformazioneprofessionale@cert.regione.piemonte.it
+                    </td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r17_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:102"
+                              data-value="[&quot;3&quot;]"
+                              data-editlabel="Ruoli assegnati a Regione Piemonte"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Regione Piemonte">
+                                Docente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Regione Piemonte"
+                                       aria-label="Ruoli assegnati a Regione Piemonte"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r17_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r17_c5">Mai</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r17_c6">
+                        <div data-fullname="Regione Piemonte"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:43"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:43">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1386"
+                               role="button"
+                               class="editenrollink"
+                               rel="1386"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1386"
+                               role="button"
+                               class="unenrollink"
+                               rel="1386"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r18">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r18_c0"><input id="user6"
+                               name="user6"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user6"
+                               class="accesshide">Seleziona 'Lucia Rosa'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r18_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=6&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Lucia Rosa"
+                                 title="Immagine Lucia Rosa">Lucia Rosa</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r18_c2">lucia.rosa@forma-re-te.it</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r18_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:6"
+                              data-value="[&quot;1&quot;]"
+                              data-editlabel="Ruoli assegnati a Lucia Rosa"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Lucia Rosa">
+                                No roles
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Lucia Rosa"
+                                       aria-label="Ruoli assegnati a Lucia Rosa"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r18_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r18_c5">5 giorni 23 ore</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r18_c6">
+                        <div data-fullname="Lucia Rosa"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="mercoledì, 16 novembre 2022, 08:56"
+                             data-timeend=""
+                             data-timeenrolled="mercoledì, 16 novembre 2022, 08:57">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1399"
+                               role="button"
+                               class="editenrollink"
+                               rel="1399"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1399"
+                               role="button"
+                               class="unenrollink"
+                               rel="1399"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=""
+                    id="user-index-participants-80_r19">
+                    <td class="cell c0"
+                        id="user-index-participants-80_r19_c0"><input id="user750"
+                               name="user750"
+                               type="checkbox"
+                               class="usercheckbox m-1"
+                               value=""
+                               data-action="toggle"
+                               data-toggle="slave"
+                               data-togglegroup="participants-table">
+                        <label for="user750"
+                               class="accesshide">Seleziona 'Matteo Vayr'</label>
+                    </td>
+                    <th class="cell c1"
+                        id="user-index-participants-80_r19_c1"
+                        scope="row"><a href="https://www.formaretedad.it/dad/user/view.php?id=750&amp;course=80"
+                           class="d-inline-block aabtn"><img
+                                 src="https://www.formaretedad.it/dad/theme/image.php/adaptable/core/1637591395/u/f2"
+                                 class="userpicture defaultuserpic"
+                                 width="35"
+                                 height="35"
+                                 alt="Immagine Matteo Vayr"
+                                 title="Immagine Matteo Vayr">Matteo Vayr</a></th>
+                    <td class="cell c2"
+                        id="user-index-participants-80_r19_c2">matteo.vayr@gmail.com</td>
+                    <td class="cell c3"
+                        id="user-index-participants-80_r19_c3"><span
+                              class="inplaceeditable inplaceeditable-autocomplete"
+                              data-inplaceeditable="1"
+                              data-component="core_user"
+                              data-itemtype="user_roles"
+                              data-itemid="80:750"
+                              data-value="[&quot;5&quot;]"
+                              data-editlabel="Ruoli assegnati a Matteo Vayr"
+                              data-type="autocomplete"
+                              data-options="{&quot;options&quot;:[{&quot;key&quot;:4,&quot;value&quot;:&quot;Docente non editor&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;Studente&quot;}],&quot;attributes&quot;:{&quot;multiple&quot;:true}}">
+
+                            <a href="#"
+                               class="quickeditlink aalink"
+                               data-inplaceeditablelink="1"
+                               title="Ruoli assegnati a Matteo Vayr">
+                                Studente
+                                <span class="quickediticon visibleifjs"><i class="icon fa fa-pencil fa-fw "
+                                       title="Ruoli assegnati a Matteo Vayr"
+                                       aria-label="Ruoli assegnati a Matteo Vayr"></i></span>
+                            </a>
+                        </span></td>
+                    <td class="cell c4"
+                        id="user-index-participants-80_r19_c4">Senza gruppi</td>
+                    <td class="cell c5"
+                        id="user-index-participants-80_r19_c5">2 ore 59 min.</td>
+                    <td class="cell c6"
+                        id="user-index-participants-80_r19_c6">
+                        <div data-fullname="Matteo Vayr"
+                             data-coursename="TECNICO SVILUPPO SOFTWARE 22-23"
+                             data-enrolinstancename="Iscrizione manuale"
+                             data-status="Attivo"
+                             data-timestart="lunedì, 7 novembre 2022, 09:41"
+                             data-timeend=""
+                             data-timeenrolled="lunedì, 7 novembre 2022, 09:42">
+                            <span class="badge badge-success">Attivo</span>
+                            <a data-action="showdetails"
+                               href="#"
+                               role="button"
+                               tabindex="0"><i class="icon fa fa-info-circle fa-fw "
+                                   title="Iscrizione manuale"
+                                   aria-label="Iscrizione manuale"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/editenrolment.php?id=80&amp;ue=1380"
+                               role="button"
+                               class="editenrollink"
+                               rel="1380"
+                               data-action="editenrolment"
+                               title="Modifica iscrizione"><i class="icon fa fa-cog fa-fw "
+                                   title="Modifica iscrizione"
+                                   aria-label="Modifica iscrizione"></i></a>
+                            <a href="https://www.formaretedad.it/dad/enrol/unenroluser.php?id=80&amp;ue=1380"
+                               role="button"
+                               class="unenrollink"
+                               rel="1380"
+                               data-action="unenrol"
+                               title="Disiscrivi"><i class="icon fa fa-trash fa-fw "
+                                   title="Disiscrivi"
+                                   aria-label="Disiscrivi"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+           const all = document.querySelectorAll(".cell.c1 a")
+           all.forEach(element => {
+                console.log(element.innerText)
+           });
+
+           const from = Array.from(all)
+           // console.log(from)
+           const  nomi = from.map(element => {
+                return element.innerText.trim()
+           });
+
+
+
+           console.log(JSON.stringify(nomi))
+        </script>
+    </body>
+
+</html>
