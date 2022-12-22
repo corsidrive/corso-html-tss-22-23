@@ -20,7 +20,7 @@
 
 🧧*nota: domandine*
 - lista ordinata
-- link che apre in un altra finestra
+- link che apre in un altra finestra/tab
 - link che apre il programma di posta elettronica predefinito
 - un immagine  che è anche un link
 
