@@ -47,3 +47,11 @@ Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 
 - Name: Live Server<br>
   VS Marketplace Link: [link app store di vscode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+
+
+
+  ## CSS
+
+  - [Sintassi](https://www.w3schools.com/css/css_syntax.asp)
+  - [Selettori](https://www.w3schools.com/css/css_selectors.asp)

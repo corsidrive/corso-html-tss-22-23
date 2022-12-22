@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(251, 251, 251);
+            
+        }
+        h1 {
+            /* border: 1px solid red; */
+        }
+
+        .postazione {
+            border: 5px solid rgb(59, 59, 59);
+            width: 100px;
+            height: 100px;
+           
+        }
+
+        .postazione.occupata {
+            background-color: cadetblue;
+        }
+
+        .postazione.libera {
+            background-color: rgb(90, 222, 90);
+            border-color: rgb(32, 160, 32) ;
+        }
+
+        .postazione.inutilizzabile {
+            opacity: 0.5;
+            border-color: red ;
+            color: red;
+        }
+
+        /* * {
+            border: 1px solid red;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Prenotazione Sala</h1>
+        <section class="sala">
+            <div class="postazione occupata">
+                01
+            </div>
+            <div class="postazione libera">
+                02
+            </div>
+            <div class="postazione inutilizzabile">
+                03
+            </div>
+        </section>
+    </main>
+</body>
+</html>
