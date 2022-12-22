@@ -55,3 +55,12 @@ Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 
   - [Sintassi](https://www.w3schools.com/css/css_syntax.asp)
   - [Selettori](https://www.w3schools.com/css/css_selectors.asp)
+
+# Proprietà CSS
+  - [color](https://www.w3schools.com/css/css_colors.asp)
+  - [Font/Caratteri](https://www.w3schools.com/css/css_font.asp)
+  - [background](https://www.w3schools.com/css/css_background.asp)
+  - [border](https://www.w3schools.com/css/css_border.asp)
+  - [dimensioni](https://www.w3schools.com/css/css_dimension.asp)
+
+  - [Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
