@@ -67,13 +67,10 @@ Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 
 
 
-### Esecitazione 02
+🧧*Esecitazione 02*
 
 - Creare un  paragrafo e impostare un carattere della famiglia monospace.
-
 - Impostare elemento con uno sfondo  verde con il 50% di opacità e un bordo rosso di 10px (solo lo sfondo non tutto l'elemento). 
-
 - Nell'esercitazione [class seletor](./selettori_css/class_selector.html).
 Impostare un bordo tratteggiato nella postazione non disponibile (**.occupata**).
-
 - Impostare un elemento con larghezza 50% e altezza 100 Pixel. colore del bordo a piacere. Utilizza attributo un di classe.
