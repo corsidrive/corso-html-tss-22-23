@@ -67,8 +67,20 @@ Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 
 🧧*Esecitazione 02*
 
-- Creare un  paragrafo e impostare un carattere della famiglia monospace.
-- Impostare elemento con uno sfondo  verde con il 50% di opacità e un bordo rosso di 10px (solo lo sfondo non tutto l'elemento). 
-- Nell'esercitazione [class seletor](./selettori_css/class_selector.html).
+- 1. Creare un  paragrafo e impostare un carattere della famiglia monospace.
+- 2. Impostare elemento con uno sfondo  verde con il 50% di opacità e un bordo rosso di 10px (solo lo sfondo non tutto l'elemento deve essere trasparente). 
+- 3. Nell'esercitazione [class seletor](./selettori_css/class_selector.html).
 Impostare un bordo tratteggiato nella postazione non disponibile (**.occupata**).
-- Impostare un elemento con larghezza 50% e altezza 100 Pixel. colore del bordo a piacere. Utilizza attributo un di classe.
+- 4. Impostare un elemento con larghezza 50% e altezza 100 Pixel. colore del bordo a piacere. Utilizza attributo un di classe.
+
+
+- [google fonts](https://fonts.google.com/) 
+- [win 98 CSS](https://jdan.github.io/98.css/)
+
+###  Block level Element  Inline Element
+! mettere le icone all'esercitazione  
+
+- [inline e block](https://www.w3schools.com/html/html_blocks.asp)
+
+- [box model](https://www.w3schools.com/css/css_boxmodel.asp)
+- [box model disegno](https://en.wikipedia.org/wiki/CSS_box_model#/media/File:Boxmodell-detail.png)

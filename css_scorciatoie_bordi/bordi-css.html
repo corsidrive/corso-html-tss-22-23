@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordi CSS</title>
+    <style>
+        .bordo-senza-scorciatoie {
+            border-top-color: blue ;
+            border-top-width: 1px;
+            border-top-style: solid;
+            
+            /* margin:10px */
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+        .bordo-con-scorciatoia{
+            border-top: 1px solid blue;
+            /* una proprietà cardinale se non indico nessuna direzione allora viene applicata in tutte le direzioni */
+            margin: 10px;
+        }
+
+        .bordo-tutte-direzioni{
+            border: 5px solid salmon;
+            margin: 20px;
+            padding: 20px;
+            background-color: orange;
+
+        }
+
+        p{background-color: orange;
+            height: 200px;
+        }
+        .inline-element{
+            background-color: yellow;
+            height: 1000px;
+            line-height: 200%;
+            width: 1000000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bordo-senza-scorciatoie">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, aliquam quae, temporibus a omnis, nesciunt atque enim esse voluptates voluptatibus voluptatum officiis tenetur natus ipsa eos sed ipsam quo id!
+    </div>
+
+    <div class="bordo-con-scorciatoia">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, aliquam quae, temporibus a omnis, nesciunt atque enim esse voluptates voluptatibus voluptatum officiis tenetur natus ipsa eos sed ipsam quo id!
+    </div>
+
+    <div class="bordo-tutte-direzioni">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, aliquam quae, temporibus a omnis, nesciunt atque enim esse voluptates voluptatibus voluptatum officiis tenetur natus ipsa eos sed ipsam quo id!
+    </div>
+    
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident id ratione assumenda omnis quia eveniet quos. Quos et eaque velit perspiciatis atque quasi expedita debitis illo exercitationem voluptates. Voluptate, qui.
+    </p>
+
+    <strong class="inline-element">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem optio maxime nemo? Provident dolorum vel officiis dignissimos, omnis officia nostrum quasi nulla reprehenderit voluptatem eaque consectetur cum mollitia quidem amet.
+    </strong>
+</body>
+</html>
