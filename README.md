@@ -78,7 +78,7 @@ Impostare un bordo tratteggiato nella postazione non disponibile (**.occupata**)
 - [win 98 CSS](https://jdan.github.io/98.css/)
 
 ###  Block level Element  Inline Element
-! mettere le icone all'esercitazione  
+! RICORDATI mettere le icone all'esercitazione  
 
 - [inline e block](https://www.w3schools.com/html/html_blocks.asp)
 
