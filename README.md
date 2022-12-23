@@ -4,9 +4,7 @@
 
 ## Basi HTML
 
-### Risorse W3School
-
-#### HTML 5
+### HTML 5
 
 - [Struttura base di un documento HTML](https://www.w3schools.com/html/default.asp)
 
