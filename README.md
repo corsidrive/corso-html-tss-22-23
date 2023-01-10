@@ -78,6 +78,17 @@ https://www.w3schools.com/html/default.asp
 
 ---
 
+### Display Flex
+
+- https://flexboxfroggy.com/#it
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+- align content  item
+- collonne con margini
+
+
+
 ## Estensioni vscode
 Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 
