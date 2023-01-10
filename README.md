@@ -80,12 +80,17 @@ https://www.w3schools.com/html/default.asp
 
 ### Display Flex
 
-- https://flexboxfroggy.com/#it
+#### Giochi sul flexbox
 
+- [la rana](https://flexboxfroggy.com/#it)
+- [le postazioni di artiglieria](http://www.flexboxdefense.com/)
+
+*articolo su flex-box* da usare come riferimento
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-- align content  item
-- collonne con margini
+
+- differenza tra align-content  align-items
+- colonne con margini
 
 
 
