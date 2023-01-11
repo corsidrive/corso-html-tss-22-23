@@ -102,6 +102,13 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 > 2. provare a impaginare del testo >(lorem ipsum...) su 3 colonne (su un file separato)
 
 
+## GIT 
+
+[Versione da scaricare](https://git-scm.com/)
+
+
+git config --global user.name "Mona Lisa"
+git config --global user.email "sarassoroberto@gmail.com"
 
 
 ## Estensioni vscode
