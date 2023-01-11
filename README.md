@@ -1,4 +1,11 @@
 
+**DA SPIEGARE / DA FARE**
+> - ❗❗differenza tra align-content  align-items
+> - ✅colonne con margini
+> - ❗@robertosarasso RICORDATI mettere le icone all'esercitazione  
+> - ❗@robertosarasso RICORDATI di usare esercitazione piantina aula per ripassare  
+---
+
 
 # Corso HTML 
 
@@ -68,8 +75,6 @@ https://www.w3schools.com/html/default.asp
 - [google fonts](https://fonts.google.com/) 
 
 ###  Block level Element  Inline Element
-! @robertosarasso RICORDATI mettere le icone all'esercitazione  
-! @robertosarasso RICORDATI di usare esercitazione piantina aula per ripassare  
 
 - [inline e block](https://www.w3schools.com/html/html_blocks.asp)
 
@@ -88,11 +93,7 @@ https://www.w3schools.com/html/default.asp
 *articolo su flex-box* da usare come riferimento
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-**DA SPIEGARE**
-- ❗❗differenza tra align-content  align-items
-- ✅colonne con margini
 
----
 
 > 🧧*Esecitazione 03*
 > 1. Inserire un google font in
