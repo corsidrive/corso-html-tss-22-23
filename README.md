@@ -88,9 +88,19 @@ https://www.w3schools.com/html/default.asp
 *articolo su flex-box* da usare come riferimento
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-
+**DA SPIEGARE**
 - differenza tra align-content  align-items
 - colonne con margini
+
+---
+
+
+> 🧧*Esecitazione 03*
+> 1. Inserire un google font in
+> css_proprietà_display_flex_block_none\display_flex.html
+>
+> 2. provare a impaginare del testo >(lorem ipsum...) su 3 colonne 
+
 
 
 
@@ -103,3 +113,5 @@ Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 ## Curiosità
 
 - [win 98 CSS](https://jdan.github.io/98.css/)
+
+
