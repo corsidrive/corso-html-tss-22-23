@@ -99,7 +99,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 > 1. Inserire un google font in
 > css_proprietà_display_flex_block_none\display_flex.html
 >
-> 2. provare a impaginare del testo >(lorem ipsum...) su 3 colonne 
+> 2. provare a impaginare del testo >(lorem ipsum...) su 3 colonne (su un file separato)
 
 
 
