@@ -21,7 +21,8 @@
         }
 
         .col img {
-            width: 100%;
+            /* width: 100%; */
+            max-width: 100%; 
         }
 
         .col:first-child {
@@ -45,6 +46,10 @@
             width: 25%;
         }
 
+        .row--col-5 .col {
+            width: 20%;
+        }
+
         .rosso {
             color: red;
         }
@@ -53,15 +58,19 @@
 <body>
 
     <h2>sono tre colonne</h2>
-    <div class="row row--col-3">
+    <div class="row row--col-5">
         <div class="col">
             <h3>Testo di questa colonna</h3> 
+            <p>A Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos.</p>
+            <p>A Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos.</p>
+            <h3>Testo di questa colonna</h3> 
+            
             <p>A Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos.</p>
              <p>In consectetur, eum quasi voluptatem sed, eligendi veritatis dolores qui dolorum molestias iure obcaecati facilis at velit alias commodi animi.
                 </p>
         </div>
         <div class="col">
-            <img src="https://i.pravatar.cc/1250?img=22">
+            <img src="https://i.pravatar.cc/250?img=22">
             <p>B Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus cumque repellat voluptatem nihil, voluptas et est laboriosam exercitationem sit culpa id corrupti quaerat quo maiores nostrum harum quibusdam ut mollitia!</p> 
         </div>
         <div class="col"> 3 Lorem ipsum dolor sit amet fugiat asperiores vitae obcaecati?</div>
