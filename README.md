@@ -89,11 +89,10 @@ https://www.w3schools.com/html/default.asp
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 **DA SPIEGARE**
-- differenza tra align-content  align-items
-- colonne con margini
+- ❗❗differenza tra align-content  align-items
+- ✅colonne con margini
 
 ---
-
 
 > 🧧*Esecitazione 03*
 > 1. Inserire un google font in
@@ -101,6 +100,14 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 >
 > 2. provare a impaginare del testo >(lorem ipsum...) su 3 colonne (su un file separato)
 
+### Pseudoclassi CSS e selettori "avazati"
+
+Selettori utilizzati per il sistema di colonne
+- [last-child](https://www.w3schools.com/cssref/sel_last-child.php)
+- [first-child](https://www.w3schools.com/cssref/sel_firstchild.php)
+
+**Tecnica per le immagini responsive**
+[How TO - Responsive Images](https://www.w3schools.com/howto/howto_css_image_responsive.asp)
 
 ## GIT 
 
@@ -118,7 +125,7 @@ Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 
 
 ## Curiosità
-
+![Generatore di avatar](https://i.pravatar.cc/150?img=3)
 - [Generatore di Avatar](https://i.pravatar.cc) 
 - [win 98 CSS](https://jdan.github.io/98.css/)
 
