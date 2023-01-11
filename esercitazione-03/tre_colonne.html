@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tre colonne flex</title>
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 1px solid red; */
+            margin-bottom: 1rem;
+        }
+        .col {
+            padding-top: 1rem;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* 0 margin-top: 0 margin-bottom:0 | padding-left: 1rem padding-right 1rem */
+            padding: 0 0.5rem;
+        }
+
+        .col img {
+            /* width: 100%; */
+            max-width: 100%; 
+        }
+
+        .col:first-child {
+            /* background-color: aqua; */
+            padding-left: 0;
+        } 
+
+        .col:last-child {
+            /* background-color: bisque; */
+            padding-right: 0;
+        }
+
+        .row--col-3 .col {
+            width: 33.3333%;
+        }
+        .row--col-2 .col {
+            width: 50%;
+        }
+
+        .row--col-4 .col {
+            width: 25%;
+        }
+
+        .row--col-5 .col {
+            width: 20%;
+        }
+
+        .rosso {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>sono tre colonne</h2>
+    <div class="row row--col-5">
+        <div class="col">
+            <h3>Testo di questa colonna</h3> 
+            <p>A Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos.</p>
+            <p>A Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos.</p>
+            <h3>Testo di questa colonna</h3> 
+            
+            <p>A Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos.</p>
+             <p>In consectetur, eum quasi voluptatem sed, eligendi veritatis dolores qui dolorum molestias iure obcaecati facilis at velit alias commodi animi.
+                </p>
+        </div>
+        <div class="col">
+            <img src="https://i.pravatar.cc/250?img=22">
+            <p>B Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus cumque repellat voluptatem nihil, voluptas et est laboriosam exercitationem sit culpa id corrupti quaerat quo maiores nostrum harum quibusdam ut mollitia!</p> 
+        </div>
+        <div class="col"> 3 Lorem ipsum dolor sit amet fugiat asperiores vitae obcaecati?</div>
+    </div>
+    <h2>Sono due colonne</h3>
+    <div class="row row--col-2">
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos. In consectetur, eum quasi voluptatem sed, eligendi veritatis dolores qui dolorum molestias iure obcaecati facilis at velit alias commodi animi.</div>
+        <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus cumque repellat voluptatem nihil, voluptas et est laboriosam exercitationem sit culpa id corrupti quaerat quo maiores nostrum harum quibusdam ut mollitia!</div>
+    </div> 
+    <div class="row row--col-4">
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos. In consectetur, eum quasi voluptatem sed, eligendi veritatis dolores qui dolorum molestias iure obcaecati facilis at velit alias commodi animi.</div>
+        <div class="col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus cumque repellat voluptatem nihil, voluptas et est laboriosam exercitationem sit culpa id corrupti quaerat quo maiores nostrum harum quibusdam ut mollitia!</div>
+        <div class="col">Lorem ipsum dolor sit amet fugiat asperiores vitae obcaecati?</div>
+        <div class="col">Lorem ipsum dolor sit amet fugiat asperiores vitae obcaecati?</div>
+    </div> 
+</body>
+</html>
