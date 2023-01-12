@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <!-- #aula -->
+    <ol id="aula"></ol>
+    <script>
+        // let, const
+        // EcmaScript ES6 --> javascript 2017 ES7 ---> javascript 2018
+         
+        const  allievi = [
+            "Mattia Caddeo",
+            "Alana Shelley Dantas Alves Bispo",
+            "Valentina Del Monaco",
+            "Andrea Fabbricatore",
+            "Simone Greco",
+            "Enrico Malesani",
+            "Marco Martinotti",
+            "Cristina Angelica Marutiac",
+            "Fabio Miseo",
+            "Vincenzo Mola",
+            "Matteo Peiretti",
+            "Matteo Vayr",
+            "Emanuela Velardo",
+            "Cinzia Vittone"
+        ]
+
+        function renderAllievoLi(allievo) {
+            return "<li class='card__allievo'>"+allievo+"</li>"
+        }
+
+        function renderAllievoCard(allievo) {
+            return "<div class='card__allievo'>"+allievo+"</div>"
+        }
+
+
+        // MAP Array --> HTML
+        const html = allievi.map(renderAllievo)
+        const htmlFinale = html.join("\n")
+
+        // console.log(allievi)
+        // console.log(html)
+        // console.log(htmlFinale)
+
+        const aula = document.querySelector("#aula")
+
+        aula.innerHTML = htmlFinale
+        
+        console.log(aula)
+        
+    </script>
+</body>
+
+</html>

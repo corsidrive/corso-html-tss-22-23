@@ -128,7 +128,7 @@ Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 
 
 ## Curiosità
-![Generatore di avatar](https://i.pravatar.cc/150?img=3)
+![Generatore di avatar](https://pravatar.cc/)
 - [Generatore di Avatar](https://i.pravatar.cc) 
 - [win 98 CSS](https://jdan.github.io/98.css/)
 
