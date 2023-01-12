@@ -1,0 +1,14 @@
+.avatar {
+    border: 1px solid rgb(1, 186, 211);
+    display: flex;
+    align-items: center;
+    border-radius: 32px 0px 0px 32px;
+    margin-bottom: 1rem;
+    background-color: rgba(78, 234, 255, 0.099);
+}
+
+.avatar__img {
+    border-radius: 50%;
+    width: 64px;
+    margin-right: 1rem;
+}

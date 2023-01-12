@@ -1,6 +1,6 @@
 
 **DA SPIEGARE / DA FARE**
-> - ❗❗differenza tra align-content  align-items
+> - ✅differenza tra align-content  align-items
 > - ✅colonne con margini
 > - ❗@robertosarasso RICORDATI mettere le icone all'esercitazione  
 > - ❗@robertosarasso RICORDATI di usare esercitazione piantina aula per ripassare  
@@ -128,7 +128,7 @@ Estensioni di **vscode** che vi permettono di utilizzare un server HTTP
 
 
 ## Curiosità
-![Generatore di avatar](https://i.pravatar.cc/150?img=3)
+![Generatore di avatar](https://pravatar.cc/)
 - [Generatore di Avatar](https://i.pravatar.cc) 
 - [win 98 CSS](https://jdan.github.io/98.css/)
 

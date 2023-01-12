@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        :root {
+
+            --lato:100px;
+            --primary:rgb(39, 39, 39);
+            --bordo: 10px solid var(--primary);
+            --margine: 0.5rem;
+        }
+
+        .container {
+            display: flex;
+
+
+            background-color: rgb(255, 255, 255);;
+            /* filter: saturate(0%); */
+            /* background-color: var(--primary); */
+            border: var(--bordo);
+            border-color: magenta;
+        }
+
+
+        .quadrato { 
+            height: var(--lato);
+            width: var(--lato);
+            border: var(--bordo);
+            margin: var(--margine);
+            padding: var(--margine);
+        }
+        .rettangolo{
+            width: var(--lato);
+            height: 300px;
+            border: var(--bordo);
+            margin: var(--margine);
+            padding: var(--margine);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="quadrato">A</div>
+        <div class="quadrato">B</div>
+        <div class="rettangolo">C</div>
+        <div class="quadrato">D</div>
+        <div class="quadrato">E</div>
+        <div class="quadrato">F</div>
+        <div class="quadrato">G</div>
+        <div class="quadrato">H</div>
+        
+    </div>
+</body>
+</html>
