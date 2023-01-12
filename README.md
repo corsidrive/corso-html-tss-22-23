@@ -1,6 +1,6 @@
 
 **DA SPIEGARE / DA FARE**
-> - ❗❗differenza tra align-content  align-items
+> - ✅differenza tra align-content  align-items
 > - ✅colonne con margini
 > - ❗@robertosarasso RICORDATI mettere le icone all'esercitazione  
 > - ❗@robertosarasso RICORDATI di usare esercitazione piantina aula per ripassare  
