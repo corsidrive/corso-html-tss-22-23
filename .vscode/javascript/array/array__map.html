@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array map</title>
+</head>
+<body>
+    <h1>Array map</h1>
+
+    <script>
+        const numeri = [1,2,3,4,5,60,70,8,9,10];
+        /* funzione di callback */
+        function tabellinaDel2(numero,index,array) {
+            console.log(numero,index,array)
+            return numero * 2;
+        }
+        const risultato = numeri.map(tabellinaDel2)
+        
+        // const test = tabellinaDel2
+        // console.log(test)
+        //console.log(risultato)
+    </script>
+</body>
+</html>

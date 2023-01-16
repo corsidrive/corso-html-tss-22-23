@@ -1,3 +1,6 @@
+
+
+
 .avatar {
     border: 1px solid rgb(1, 186, 211);
     display: flex;
@@ -11,4 +14,20 @@
     border-radius: 50%;
     width: 64px;
     margin-right: 1rem;
+}
+
+
+.avatar--s > .avatar__img {
+    width: 32px;
+    margin-right:0.5rem ;
+}
+
+.avatar--m > .avatar__img {
+    width: 42px;
+    margin-right:0.5rem ;
+}
+
+.avatar--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }

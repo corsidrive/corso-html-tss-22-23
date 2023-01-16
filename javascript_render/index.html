@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript</title>
+    <link rel="stylesheet" href="avatar.css">
 </head>
 
 <body>
@@ -32,25 +33,11 @@
             "Cinzia Vittone"
         ]
 
-        function renderAllievo(allievo) {
-            return "<div class='card__allievo'>"+allievo+"</div>"
-        }
-
-        // MAP Array --> HTML
-        const html = allievi.map(renderAllievo)
-        const htmlFinale = html.join("\n")
-
-        // console.log(allievi)
-        // console.log(html)
-        // console.log(htmlFinale)
-
-        const aula = document.querySelector("#aula")
-
-        aula.innerHTML = htmlFinale
         
-        console.log(aula)
+       
         
     </script>
+    <script src="avatar.js"></script>
 </body>
 
 </html>
