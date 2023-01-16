@@ -110,6 +110,11 @@ Selettori utilizzati per il sistema di colonne
 **Tecnica per le immagini responsive**
 [How TO - Responsive Images](https://www.w3schools.com/howto/howto_css_image_responsive.asp)
 
+
+**javascript**
+
+- [Template Literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
 ## GIT 
 
 [Versione da scaricare](https://git-scm.com/)
