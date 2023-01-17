@@ -36,8 +36,8 @@ function renderList(selector,data,renderFunction){
 }
 
 
-renderList("#aula",allievi,renderAvatar)
-renderList("#aula_2",allievi,renderAllievo)
+// renderList("#aula",allievi,renderAvatar)
+// renderList("#aula_2",allievi,renderAllievo)
 
 
 

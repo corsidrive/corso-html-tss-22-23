@@ -115,6 +115,11 @@ Selettori utilizzati per il sistema di colonne
 
 - [Template Literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
+
+[EsercitaEsercitazione: cambia-renderig-con-bottonezione](https://docs.google.com/drawings/d/1nvfe5OaU3-Q8cvCd7u5K-Zw_HMRVGLay80e6_vxSFYE/edit?usp=sharing)
+
+
+
 ## GIT 
 
 [Versione da scaricare](https://git-scm.com/)
