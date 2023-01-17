@@ -35,7 +35,9 @@ function renderList(selector,data,renderFunction){
     aula.innerHTML = htmlFinale
 }
 
+
 renderList("#aula",allievi,renderAvatar)
+renderList("#aula_2",allievi,renderAllievo)
 
 
 
