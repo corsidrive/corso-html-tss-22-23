@@ -101,6 +101,12 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 >
 > 2. provare a impaginare del testo >(lorem ipsum...) su 3 colonne (su un file separato)
 
+
+> 🧧*Esecitazione 04*
+> [contenuti per le ricette](https://docs.google.com/document/d/1dd-LK3iUORhKvIVfVG4PsaHJ1GDdMRcueW81qg6v23U/edit)
+
+
+
 ### Pseudoclassi CSS e selettori "avazati"
 
 Selettori utilizzati per il sistema di colonne
