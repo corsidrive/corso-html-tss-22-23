@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Sematic Elements</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .content {
+            display: flex;
+        }
+
+        .content__nav {
+            background-color: greenyellow;
+            width: 15rem;
+        }
+        .content__right {
+            background-color: aliceblue;
+        }
+
+        header, main,footer {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+
+<body class="content">
+
+    <nav class="content__nav">
+        <a href="#" class="nav__link">link</a>
+        <a href="#" class="nav__link">link</a>
+        <a href="#" class="nav__link">link</a>
+        <a href="#" class="nav__link">link</a>
+        <a href="#" class="nav__link nav__link--disabled">link</a>
+    </nav>
+
+    <div class="content__right">
+        <header>
+            <h1>Ricette dal mondo</h1>
+            <p>I piatti migliori da <mark> il globo.</mark></p>
+
+        </header>
+        <main>
+            <article class="ricetta">
+                <h1>Tiramisù</h1>
+                <section class="ricetta__section">
+                    <h2>ingredienti</h2>
+                    <dl>
+                        <dt>uova</dt>
+                        <dd>4 uova</dd>
+                        <dt>caffe</dt>
+                        <dd>250 ml</dd>
+                    </dl>
+                </section>
+
+                <section class="ricetta__section ricetta__section--preparazione">
+                    <h2>preparazione</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat eaque assumenda nobis autem
+                        commodi ex similique harum qui. Doloribus cum eligendi omnis tempora suscipit libero, pariatur
+                        unde tenetur blanditiis eius.</p>
+            
+                </section>
+
+                <section class="ricetta__section">
+                    <h2>vini consigliati</h2>
+                    
+                </section>
+            </article>
+
+        </main>
+        <footer>
+            <span class="footer__info_legali">
+                <span class="footer__anni_copyright">© 1997 - 2023</span>
+                <strong>TUB Network srl</strong> - P.Iva 16454421005
+            </span>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
