@@ -106,6 +106,10 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 > [contenuti per le ricette](https://docs.google.com/document/d/1dd-LK3iUORhKvIVfVG4PsaHJ1GDdMRcueW81qg6v23U/edit)
 
 
+> 🧧*Esecitazione 05* layout flutter
+>  [file di partenza](./)
+>  
+
 
 ### Pseudoclassi CSS e selettori "avazati"
 
