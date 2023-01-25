@@ -107,7 +107,7 @@ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 
 > 🧧*Esecitazione 05* layout flutter
->  [file di partenza](./)
+>  [file di partenza](./esercitazione-05-layout-flutter-file-partenza/)
 >  
 
 
