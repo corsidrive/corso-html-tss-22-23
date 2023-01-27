@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flutter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="soluzione.css">
+</head>
+
+<body>
+
+    <div class="layout">
+        <div class="layout__main_content">
+            <header class="header">
+                <h1 class="header__title">Flutter documentation</h1>
+                <ul class="header__icons">
+                    <li class="header__icon_item">A</li>
+                    <li class="header__icon_item">B</li>
+                </ul>
+            </header>
+
+            <section class="grid">
+                <!-- item -->
+                <div class="grid__item">
+                    <article class="card">
+                        <h1 class="card__title">
+                            Get Started
+                        </h1>
+                        <p class="card__text">Set up your environment and start building.</p>
+                    </article>
+                </div>
+                <!-- /item -->
+
+                <div class="grid__item">
+                    <article class="card">
+                        <h1 class="card__title">
+                            Widgets Catalog
+                        </h1>
+                        <p class="card__text">Dip into the rich set of Flutter widgets available in the SDK.</p>
+                    </article>
+                </div>
+
+                <div class="grid__item">
+                    <article class="card">
+                        <h1 class="card__title">
+                            API Docs
+                        </h1>
+                        <p class="card__text">Bookmark the API reference docs for the Flutter framework.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="grid__item">
+                    <article class="card">
+                        <h1 class="card__title">
+                            Cookbook
+                        </h1>
+                        <p class="card__text">Browse the cookbook for many easy Flutter recipes
+                        </p>
+                    </article>
+                </div>
+
+                <div class="grid__item">
+                    <article class="card">
+                        <h1 class="card__title">
+                            Samples
+
+                        </h1>
+                        <p class="card__text">Check out the Flutter examples.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="grid__item">
+                    <article class="card">
+                        <h1 class="card__title">
+                            Videos
+                        </h1>
+                        <p class="card__text">View the many videos on the Flutter YouTube channel.</p>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+        <aside class="layout__aside_content">
+            <section class="nav_list">
+                <header class="nav_list__title">
+                    Contents
+                </header>
+                <nav>
+                    <ul class="nav_list__list">
+                        <li class="nav_list__list_item">
+                            <a href="#">What’s new on this site</a>
+                        </li>
+                        <li>
+                            <a href="#">New to Flutter?</a>
+                            <ul>
+                                <li><a href="#">Docs</a></li>
+                                <li><a href="#">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Want to skill up?</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        </aside>
+    </div>
+
+</body>
+
+</html>
